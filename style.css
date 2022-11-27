@@ -1,9 +1,10 @@
 body {
-    background-color: red;
+    background-color: #1f2039;
+    font-family: 'Comfortaa', Helvetica;
 }
 
 h1 {
-    font-size: 10rem;
-    color: yellow;
+    font-size: 8rem;
+    color: #a5b5fc;
     box-shadow: inset;
 }
