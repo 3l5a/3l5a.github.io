@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main h2{ 
+    display: none;
+}
+
+main { 
+    background-image: url(../photos/background-halloween.png);
+    background-size: cover;
+    padding-bottom: 50px;
+    filter: drop-shadow(0px 5px 5px rgb(107, 106, 106));
+}
+
+.banniere_halloween {
+    background-image: url(../photos/banniere-halloween.png);
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+}
+
+.titre_section {
+    font-family: 'Home and Work', Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 6rem;
+    padding: 20px;
+    text-shadow: var(--text-shadow-h1);
+}
+
+.titre_halloween {
+    font-family: 'Home and Work', Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 6rem;
+    padding: 20px;
+    text-shadow: var(--text-shadow-h1);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 10% 50px 10%;
+}
+
+.photos {
+    background-size: cover;
+}
+
+.card_confectionner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    border-radius: 35px;
+    background-image: url(../photos/chauve_souris.jpg);
+    background-size: cover;
+    background-position: 54% 100%;
+    filter: var(--drop-shadow-global);
+}
+
+.card_1 {
+    background-image: url(../photos/card-halloween-1.png);
+    background-size: cover;
+}
+
+.card_2 {
+    background-image: url(../photos/card-halloween-2.jpg);
+    background-size: cover;
+}
+
+.card_3 {
+    background-image: url(../photos/card-halloween-3.png);
+    background-size: cover;
+}
+
+.card_4 {
+    background-image: url(../photos/card-halloween-4.png);
+    background-size: cover;
+}
+
+.card_5 {
+    background-image: url(../photos/card-halloween-5.png);
+    background-size: cover;
+}
+
+.card_6 {
+    background-image: url(../photos/card-halloween-6.png);
+    background-size: cover;
+}
+
+
+/* ----- MEDIA QUERIES ------ */
+
+@media screen and (max-width:691px) {
+
+    .banniere_halloween {
+        background-image: url(../photos/banniere-halloween.png);
+        background-size: cover;
+        background-color: black;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 200px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .titre_halloween {
+        padding-top: 160px;
+    }
+
+    .card_confectionner {
+        margin: 30px;
+    }
+}

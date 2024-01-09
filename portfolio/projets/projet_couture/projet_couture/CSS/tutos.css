@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: var(--background-light);
+    filter: drop-shadow(0px 5px 5px rgb(107, 106, 106));
+}
+
+.titre_tutos {
+    font-family: 'Home and Work', Helvetica;
+    color: var(--background-dark);
+    text-align: center;
+    font-size: 4.5rem;
+    padding: 20px;
+    text-shadow: var(--text-shadow-h1);
+}
+
+.bandeau_titre {
+    font-family: 'Home and Work';
+    color: var(--background-extra-light);
+    background-color: var(--background-dark);
+    text-align: center;
+    font-size: 7rem;
+    padding: 5px;
+    text-shadow: var(--text-shadow-noir);
+}
+
+/* ------------------TUTOS CARRES-------------------- */
+.container_tutos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+    margin: 30px 0 80px 0;
+}
+
+.petitcontainer h2 {
+    display: none;
+}
+
+.card_carre {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: white;
+    height: 290px;
+    width: 290px;
+    border-radius: 25px;
+    background-size: 190%;
+    background-position: 54% 100%;
+    filter: drop-shadow(4px 7px 6px rgb(150, 148, 148));
+}
+
+.tutos_tricot {
+    background-color: rgba(255, 255, 255, 0.767);
+    border-radius: 0 0 25px 25px;
+    height: 30%;
+    width: 100%;
+    font-family: 'Home and Work', arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: black;
+    text-decoration: none;
+}
+
+.tutos_tricot:hover {
+    background-color: rgba(255, 255, 255, 0.593);
+    transition: background-color 0.15s linear;    
+}
+
+.photo_tricot {
+    background-image: url(../photos/tutos_tricot.webp);
+    background-size: cover;
+}
+
+
+.photo_couture {
+    background-image: url(../photos/tuto_couture_card.jpeg);
+    background-size: cover;
+}
+
+.photo_crochet {
+    background-image: url(../photos/tuto_crochet_card.jpg);
+    background-size: cover;
+}
+
+/* ------------------TUTOS RECTANGLE-------------------- */
+
+
+.grandcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.grandcontainer h2 {
+    display: none;
+}
+
+.card_tuto {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 311px;
+    width: 951px;
+    border-radius: 25px;
+    background-size: 100%;
+    background-position: 40% 50%;
+    margin: 30px;
+    filter: drop-shadow(4px 7px 6px rgb(150, 148, 148))
+}
+
+.lien_tous_nos_tutos {
+    background-color: rgba(255, 255, 255, 0.767);
+    border-radius: 0 25px 25px 0;
+    height: 100%;
+    width: 30%;
+    font-family: 'Home and Work', arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7em;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.lien_tous_nos_tutos:hover {
+    background-color: rgba(255, 255, 255, 0.593);
+    transition: background-color 0.15s linear;    
+}
+
+.photo_tuto_video {
+    background-image: url(../photos/tuto_video.jpg);
+    background-size: cover;
+}
+
+.photo_patron {
+    background-image: url(../photos/tuto_patron.jpg);
+    background-size: cover;
+}
+
+.photo_tous_tutos {
+    background-image: url(../photos/nounours.jpg);
+    background-size: cover;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media screen and (max-width:691px) {
+
+/* PETITES CARDS */
+
+    .bandeau_titre {
+        display: none;
+    }
+
+    .titre_tutos {
+        padding-top: 160px;
+        font-size: 7rem;
+    }
+
+    .container_tutos {
+        display: flex;
+        flex-direction: column;
+        margin : 0;
+    }
+
+    .petitcontainer {
+        padding: 0 30px 0 30px;
+    }
+
+    .card_carre {
+        height: 500px;
+        width: 90%;
+        margin: 30px 30px 30px 30px;
+    } 
+
+    .tutos_tricot {
+        font-size: 5.5em;
+    }
+
+/* GRANDES CARDS */
+
+    .grandcontainer {
+        padding-top: 30px;
+    }
+
+    .card_tuto {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background-color: white;
+        height: 500px;
+        width: 90%;
+        border-radius: 25px;
+        background-size: 190%;
+        background-position: 54% 100%;
+        filter: drop-shadow(4px 7px 6px rgb(150, 148, 148));
+    }
+
+    .lien_tous_nos_tutos {
+        background-color: rgba(255, 255, 255, 0.767);
+        border-radius: 0 0 25px 25px;
+        height: 30%;
+        width: 100%;
+        font-family: 'Home and Work', arial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5.5em;
+        color: black;
+        text-decoration: none;
+    }
+
+    .photo_tuto_video {
+        margin-top: 0;
+    }
+}

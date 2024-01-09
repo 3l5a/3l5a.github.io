@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    filter: drop-shadow(0px 5px 5px rgb(107, 106, 106));
+}
+
+/* ---------TITRE-------- */
+.background_main{
+    background-color: var(--background-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_titre{
+    height: 160px;
+    background-color: var( --background-dark);
+    font-family: var( --font-titles);
+    font-size: 6rem;
+    color: var(--background-extra-light);
+    text-shadow: var(--text-shadow-h1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------CARDS-------- */
+
+.container_card{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 50px;
+    gap: 40px 0;
+    justify-content: center;
+}
+
+.card_real {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: white;
+    height: 290px;
+    width: 450px;
+    border-radius: 25px;
+    background-size: 190%;
+    background-position: 54% 100%;
+    filter: var(--drop-shadow-global);
+    }
+
+.bandeau_card {
+        background-color: rgba(255, 255, 255, 0.767);
+        border-radius: 0 0 25px 25px;
+        height: 50%;
+        width: 100%;
+        font-family: 'Home and Work', arial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5.5rem;
+        color: black;
+        text-decoration: none;
+    }
+
+.card_real_large {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background-color: white;
+        height: 290px;
+        width:100%;
+        border-radius: 25px;
+        background-size: 190%;
+        background-position: 54% 100%;
+        filter: var(--drop-shadow-global);
+        grid-column: 1 / span 2;
+        }
+
+        .text_bandeau {
+            text-align: center;
+            font-family: var(--font-content);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+    
+        .container_text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            /* ---------FIN-CARDS-------- */
+
+                /* PHOTO CARDS */
+    .photo_crochet {
+        background-image: url(../photos/real_crochet.png);
+        background-size: cover;
+    }
+
+    .photo_couture {
+        background-image: url(../photos/real_couture.jpg);
+        background-size: cover;
+  
+    }
+    .photo_tricot {
+        background-image: url(../photos/real_trico.jpeg);
+        background-size: cover;
+        justify-self: end;
+    }
+    .photo_tricot {
+        background-image: url(../photos/tuto_crochet_card.jpg);
+        background-size: cover;
+    }
+    .photo_halloween {
+        background-image: url(../photos/real_halloween.png);
+        background-size: cover;
+        justify-self: end;
+    }
+    .photo_noel {
+        background-image: url(../photos/Real_noel.jpg);
+        background-size: cover;
+    }
+    .photo_real {
+        background-image: url(../photos/Toute_real.png);
+        background-size: cover;
+        justify-self: end;
+    }
+    .photo_paques {
+        background-image: url(../photos/Real_paque.png);
+        background-size: cover;
+    }
+
+    /*             MEDIA QUERIES                */
+
+    @media screen and (max-width : 691px) {
+        
+        main {
+                filter: drop-shadow(0px 5px 5px rgb(107, 106, 106));
+        }
+
+        .background_main{
+            background-color: var(--background-light);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container_titre{
+            background-color: var( --background-light);
+            font-size: 5rem;
+            color: var(--background-dark);
+            text-shadow: var(--text-shadow-h1);
+            padding-top: 180px;
+            padding-bottom: 80px;
+        }
+
+        .container_card{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 0 80px 0 ;
+        }
+
+        .card_real{
+            width: 100%;
+            border-radius: 0;
+            /* margin: 15px 0 15px 0; */
+        }
+
+        .card_real_large{
+            width: 100%;
+            border-radius: 0;
+            /* margin: 15px 0 15px 0; */
+        }
+
+        .bandeau_card {
+            border-radius: 0;
+            height: 50%;
+            width: 100%;
+            font-size: 3.7rem;
+        } 
+        
+     }

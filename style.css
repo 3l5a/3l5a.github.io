@@ -1,10 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+html, 
 body {
-    background-color: #1f2039;
-    font-family: 'Comfortaa', Helvetica;
+    scroll-behavior: smooth;
+    height: 100%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.5rem;
+}
+
+header {
+    height: 10%;
+    width: 100%;
+    background-color: rgb(218, 106, 27);
+    color: white;
+
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+h2 a {
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul a {
+    color: white;
+    text-align: none;
+    text-decoration: none;
+    padding: 8px 16px 10px 16px;
+    transition: all .2s linear;
+    border-radius: 2px;
+}
+
+nav ul a:hover {
+    color: rgb(218, 106, 27);
+    background-color: white;
+}
+
+main {
+    height: 90%;
+    padding: 5% 10%;
+    box-sizing: border-box;
+}
+
+section {
+    display: grid;
+    gap: 80px;
 }
 
 h1 {
-    font-size: 8rem;
-    color: #a5b5fc;
-    box-shadow: inset;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(218, 106, 27);
 }
+/* ////////// HOME & REALISATIONS ////////////// */
+.sections {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 22px;
+}
+
+.sections a {
+    text-decoration: none;
+}
+
+.card {
+    width: 1fr;
+    height: 16rem;
+
+    display: grid;
+    place-items: center;
+
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8em;
+    line-height: 2.2rem;
+    letter-spacing: .1rem;
+
+    filter: brightness(90%);
+    transition: filter .2s linear;
+}
+
+.card:hover {
+    filter: brightness(100%);
+}
+
+a.card-realisations {
+    position: relative;
+    padding: 0;
+}
+
+a.card-realisations::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    background-image: url(assets/puzzle.jpg);
+    filter: brightness(60%);
+    width: 100%; 
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    transition: filter .2s linear;
+}
+
+a.card-realisations:hover::before,
+a.card-cv:hover::before,
+a.card-veilles:hover::before, 
+a.card-player:hover::before, 
+a.card-souris:hover::before, 
+a.card-badminton:hover::before {
+    filter: brightness(80%);
+}
+
+a.card-veilles {
+    position: relative;
+    padding: 0;
+}
+
+a.card-veilles::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    background-image: url(assets/veille.jpg);
+    filter: brightness(60%);
+    width: 100%; 
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    transition: filter .2s linear;
+}
+
+a > div {
+    color: white;
+}
+
+.card-cv {
+    position: relative;
+    padding: 0;
+}
+
+a.card-cv::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    background-image: url(assets/cv.jpg);
+    filter: brightness(60%);
+    width: 100%; 
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    transition: filter .2s linear;
+}
+
+/* ////////////////// CARDS REALISATIONS //////////////////// */
+
+a.card-souris {
+    position: relative;
+    padding: 0;
+}
+
+a.card-souris::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    background-image: url(assets/souris.png);
+    filter: brightness(60%);
+    width: 100%; 
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    transition: filter .2s linear;
+}
+
+a.card-player {
+    position: relative;
+    padding: 0;
+}
+
+a.card-player::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    background-image: url(assets/aurora.png);
+    filter: brightness(60%);
+    width: 100%; 
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    transition: filter .2s linear;
+}
+
+a.card-badminton {
+    position: relative;
+    padding: 0;
+}
+
+a.card-badminton::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    background-image: url(assets/badminton.png);
+    filter: brightness(60%);
+    width: 100%; 
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    transition: filter .2s linear;
+}
+
+/* ///////////// VEILLES ///////// */
+
+section.veilles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 40px;
+}
+
+.veilles h1 {
+    grid-column-start: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.veilles ul {
+    max-width: 800px;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.veilles img {
+    grid-column-start: 3 ;
+    grid-row: 1 / 3;
+}
+
+time {
+    margin-bottom: 14px;
+    font-size: 1rem;
+    color: rgb(117, 116, 116);
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+h3 a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+h3 a:hover {
+    border-bottom: dotted black 3px;
+}
+
+.veilles p {
+    margin-bottom: 20px;
+}
+
+ /* //////////ARTICLE VEILLE TECHNO//////// */
+
+
+ section.article {
+    gap: 10px;
+}
+
+section.article h1 {
+    margin-bottom: 10px;
+}
+section.article>time+p {
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: bold;
+
+    padding-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-bottom: solid rgb(218, 106, 27) 7px;
+}
+.article {
+    max-width: 800px;
+    text-align: justify;
+}
+
+ code {
+    font-family: 'Inconsolata', 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin: 0 3px;
+}
+
+.article dd p {
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+dd {
+    margin: 20px 0;
+    margin-bottom: 100px;
+    width: 100%;
+    display: grid;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-bottom: dotted black 2px;
+    width: fit-content;
+}
+
+img {
+    margin: 20px auto ;
+}
+
+figcaption {
+    margin: auto;
+    font-style: italic;
+}
+
+time+p a {
+    color: rgb(218, 106, 27);
+}
+
+.upward {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(218, 106, 27);
+    display: grid;
+    place-items: center;
+    border-radius: 100%;
+    font-size: 2rem;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.upward a {
+    text-decoration: none;
+    color: white
+}
+
+p.center-text {
+    width: 100%;
+    text-align: center;
+}
+b {
+    font-weight: bold;
+    text-align: center;
+}
+
+i {
+    font-style: italic;
+}
+ /* /////////// CV ////////////// */
+  .img-cv {
+    max-width: 500px;
+  }
+
+
+
+
+

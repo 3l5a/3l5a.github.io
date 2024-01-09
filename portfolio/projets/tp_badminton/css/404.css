@@ -1,0 +1,10 @@
+body {
+    background-image: url(../assets/img/404.jpg);
+    background-size: cover;
+
+    text-align: center;
+    color: rgba(255, 255, 255, 0.877);
+    font-size: 3rem;
+    font-family: Verdana;
+    padding-top: 7rem;
+}

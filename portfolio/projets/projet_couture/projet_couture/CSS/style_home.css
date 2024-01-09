@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    filter: drop-shadow(0px 5px 5px rgb(150, 148, 148));
+}
+
+/* Section 1 */
+
+.a_la_une {
+    background-color: var(--background-light);
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titre_une {
+    font-family: 'Home and Work', Helvetica, sans-serif;
+    color: var(--background-dark);
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 20px;
+    text-shadow: var(--text-shadow-h1);
+}
+
+.container_une {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.card_une {
+    background-color: white;
+    border-radius: 10px;
+    width: 260px;
+    height: 365px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    filter: var(--drop-shadow-article);
+}
+
+.image_une {
+    height: 40%;
+    width: 100%;
+    background-image: url(../photos/Ambiance_Halloween.png);
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.image_deux {
+    height: 40%;
+    width: 100%;
+    background-image: url(../photos/balles_montessori.jpg);
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.image_trois {
+    height: 40%;
+    width: 100%;
+    background-image: url(../photos/groupe_asso.png);
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.texte_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texte_card>h3 {
+    font-family: 'Home and Work', Helvetica, sans-serif;
+    color: var(--background-dark);
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 10px;
+    filter: var(--drop-shadow-global);
+}
+
+.texte_card>p {
+    font-family: "Gayathri", Arial;
+    color: black;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+    text-align: justify;
+}
+
+/* Section 2 */
+
+.confectionner {
+    background-color: var(--background-dark);
+    width: 100%;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.titre_confection {
+    font-family: 'Home and Work', Helvetica, sans-serif;
+    color: var(--background-extra-light);
+    text-align: center;
+    font-size: 3.5rem;
+    text-shadow: var(--text-shadow-noir);
+    line-height: 0.5;
+}
+
+.container_confectionner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 30px 0 30px;
+}
+
+.card_confectionner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: white;
+    height: 290px;
+    width: 290px;
+    border-radius: 25px;
+    background-size: 190%;
+    background-position: 54% 100%;
+    filter: var(--drop-shadow-global);
+}
+
+.photo_halloween {
+    background-image: url(../photos/robe_halloween.png);
+    background-size: cover;
+}
+
+.photo_hochet {
+    background-image: url(../photos/hochets_animaux.png);
+    background-size: cover;
+}
+
+.photo_ours {
+    background-image: url(../photos/ours_amigurumi.png);
+    background-size: cover;
+}
+
+#citrouille {
+    transform: translateX(-23px) translateY(-10px);
+}
+
+.chevron {
+    cursor: pointer;
+}
+
+/* J'ai dû rajouter un marging à gauche parce que la citrouille faisait dévier le titre à gauche */
+.marging_titre {
+    margin-left: 35px;
+}
+
+/* Section 3 */
+
+.tutos {
+    background-color: var(--background-light);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titre_tutos {
+    font-family: 'Home and Work', Helvetica, sans-serif;
+    color: var(--background-dark);
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 20px;
+    text-shadow: var(--text-shadow-h1);
+}
+
+.container_tutos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.card_tuto {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url(../photos/tutos_tricot.webp);
+    background-color: white;
+    height: 290px;
+    width: 290px;
+    border-radius: 25px;
+    background-size: 190%;
+    background-position: 54% 100%;
+    filter: var(--drop-shadow-global);
+    margin: 0 2.5rem 0 2.5rem;
+}
+
+.tutos_tricot {
+    background-color: rgba(255, 255, 255, 0.767);
+    border-radius: 0 0 25px 25px;
+    height: 30%;
+    width: 100%;
+    font-family: 'Home and Work', arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: black;
+    text-decoration: none;
+}
+
+.tutos_tricot:hover {
+    background-color: rgba(255, 255, 255, 0.593);
+    transition: background-color 0.15s linear;
+}
+
+
+.photo_tricot {
+    background-image: url(../photos/tutos_tricot.webp);
+}
+
+.photo_couture {
+    background-image: url(../photos/tuto_couture_card.jpeg);
+}
+
+.photo_crochet {
+    background-image: url(../photos/tuto_crochet_card.jpg);
+    background-size: cover;
+}
+
+/* Section 4 PLANNING */
+
+.planning {
+    background-color: var(--background-dark);
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titre_planning {
+    font-family: 'Home and Work', Helvetica, sans-serif;
+    color: var(--background-extra-light);
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 20px;
+    text-shadow: var(--text-shadow-noir);
+}
+
+.container_planning {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.titre_mobile {
+    display: none;
+}
+
+.img_planning {
+    height: 400px;
+}
+
+.titre_planning_mobile {
+    display: none;
+}
+
+.planning_mobile {
+    display: none;
+}
+
+/* Tableau Planning Desktop*/
+
+.planning-table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 782px;
+    height: 400px;
+    font-family: "Home and Work", Helvetica;
+    background-color: #e5d9e9;
+    font-size: 2rem;
+}
+
+.planning-table td {
+    height: 20px;
+    text-align: center;
+}
+
+.table-time {
+    background-color: #fcf3b4;
+}
+
+.planning-table thead td,
+.planning-table .table-time {
+    text-align: center;
+}
+
+.planning-table-couture {
+    background-color: #fffad6;
+}
+
+.planning-table-enfant,
+.planning-table-bebe {
+    background-color: #cfe2f3;
+}
+
+.planning-table-tricot {
+    background-color: #ead1dc;
+}
+
+td:not(.no_border) {
+    border: solid 1px black;
+}
+
+.border_purple {
+    border-top: 1px solid #ead1dc;
+}
+
+
+
+
+
+/* --------------------------------------------------------
+-----------------------------------------------------------
+-----------------------MEDIA QUERY-------------------------
+-----------------------------------------------------------
+-------------------------------------------------------- */
+
+
+
+@media screen and (max-width: 691px) {
+
+    /* Section 1 */
+
+    .a_la_une {
+        height: 1200px;
+    }
+
+    .titre_une {
+        font-size: 4rem;
+        padding-top: 150px;
+    }
+
+    .container_une {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card_une {
+        width: 450px;
+        height: 250px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        display: flex;
+    }
+
+    .image_une,
+    .image_deux,
+    .image_trois {
+        height: 100%;
+        background-size: cover;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .image_une {
+        width: 1000px;
+        background-size: 180%;
+        background-position: 40%;
+    }
+
+    .image_deux {
+        width: 1050px;
+        background-size: 127%;
+        background-position: 60%;
+    }
+
+    .image_trois {
+        width: 650px;
+        background-size: 205%;
+        background-position: 40%;
+    }
+
+    .texte_card {
+        justify-content: stretch;
+    }
+
+    /* Section 2 */
+
+    .confectionner {
+        align-items: center;
+    }
+
+    .titre_confection {
+        text-align: center;
+        font-size: 3.5rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.2rem;
+        width: 500px;
+    }
+
+    .container_confectionner {
+        margin: 0;
+        width: 100%;
+    }
+
+    .card_confectionner {
+        height: 290px;
+        width: 290px;
+    }
+
+    .photo_halloween {
+        background-image: url(../photos/robe_halloween.png);
+        background-size: contain;
+    }
+
+    .photo_hochet,
+    .photo_ours {
+        display: none;
+    }
+
+    /* Section 3 */
+
+    .tutos {
+        width: 100%;
+        height: 1350px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titre_tutos {
+        text-align: center;
+        letter-spacing: .1rem;
+        font-size: 5rem;
+        padding: 40px 0 20px 0;
+    }
+
+    .container_tutos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .card_tuto {
+        width: 470px;
+        height: 325px;
+        margin-bottom: 70px;
+        filter: drop-shadow(0px 4px 13px #000000b8);
+    }
+
+    .photo_couture {
+        background-size: 140%;
+    }
+
+    .photo_tricot {
+        background-size: 140%;
+    }
+
+    /* Section 4 PLANNING */
+
+    .planning {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--background-extra-light);
+    }
+
+
+    .titre_planning {
+        display: none;
+    }
+
+    .titre_mobile {
+        display: flex;
+        justify-content: center;
+        color: var(--background-dark);
+        font-size: 4rem;
+        padding: 20px;
+        text-shadow: var(--text-shadow-noir);
+        font-family: 'Home and Work', Helvetica, sans-serif;
+        letter-spacing: .2rem;
+        margin: 15px 0 20px 0;
+    }
+
+    .img_planning {
+        display: none;
+    }
+
+    .planning_mobile {
+        display: flex;
+        justify-content: center;
+        font-family: 'Gayathri', Helvetica;
+        font-size: 1.5rem;
+    }
+
+    td {
+        padding: 5px;
+    }
+
+    .planning-table {
+        display: none;
+    }
+}

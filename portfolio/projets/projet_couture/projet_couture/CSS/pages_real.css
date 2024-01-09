@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: var(--background-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 5px 5px rgb(150, 148, 148));
+}
+
+.titre_real {
+    font-family: 'Home and Work';
+    color: black;
+    text-align: center;
+    font-size: 6rem;
+    padding: 15px;
+    text-shadow: var(--text-shadow-h1);
+}
+
+#real {
+    width: 1000px;
+    margin-top: 20px;
+}
+
+#real h2 {
+    display: none;
+}
+
+/* ----- GROSSE CARD ------------- */
+
+.card_gros_ours {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: 600px;
+    border-radius: 25px 25px 0 0;
+    background-size: 190%;
+    background-position: 54% 100%;
+}
+
+.big_bandeau {
+    background-color: rgba(255, 255, 255, 0.767);
+    height: 20%;
+    width: 100%;
+    font-family: 'Gayathri', arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+}
+
+.photo_gros_ours {
+    background-image: url(../photos/gros-ourson.jpg);
+    background-size: cover;
+}
+
+/* ------ LIGNES ----------- */
+
+.card_ours {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: white;
+    width: 33%;
+    height: 300px;
+    background-size: 190%;
+    background-position: 54% 100%;
+}
+
+.petit_bandeau {
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 25%;
+    width: 100%;
+    font-family: 'Gayathri', arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.ligne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ours_un {
+    background-image: url(../photos/ours_1.jpg);
+    background-size: cover;
+}
+
+.ours_deux {
+    background-image: url(../photos/ours_2.jpeg);
+    background-size: cover;
+}
+
+.ours_trois {
+    background-image: url(../photos/ours_3.png);
+    background-size: cover;
+}
+
+.ours_quatre {
+    background-image: url(../photos/ours_4.jpg);
+    background-size: cover;
+    border-bottom-left-radius: 25px;
+}
+
+.ours_cinq {
+    background-image: url(../photos/ours_5.jpg);
+    background-size: cover;
+}
+
+.ours_six {
+    background-image: url(../photos/ours_6.jpg);
+    background-size: cover;
+    border-bottom-right-radius: 25px;
+}
+
+.border_left {
+    border-bottom-left-radius: 25px;
+}
+
+.border_right {
+    border-bottom-right-radius: 25px;
+}
+
+
+/* ------ TEXTE ---------- */
+
+.description {
+    font-family: 'Gayathri', arial;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 50px;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media screen and (max-width:691px) {
+
+    .titre_real {
+        padding-top: 160px;
+    }
+
+    .ligne {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .big_bandeau { 
+        font-size: 2.3rem;
+    }
+
+    .petit_bandeau {
+        background-color: rgba(255, 255, 255, 0.767);
+        height: 20%;
+        width: 100%;
+        font-family: 'Gayathri', arial;
+        display: flex;
+        padding-top: 10px;
+        font-size: 2.3rem;
+        color: black;
+        text-decoration: none;
+    }
+
+    .card_ours {
+        width: 100%;
+        height: 650px;
+        margin: 30px;
+    }
+
+    .ours_un {
+        background-image: url(../photos/ours_1.jpg);
+        background-size: 70%;
+    }
+
+    .ours_deux {
+        background-image: url(../photos/ours_2.jpeg);
+        background-size: 70%;
+    }
+    
+    .ours_trois {
+        background-image: url(../photos/ours_3.png);
+        background-size: 70%;
+    }
+    
+    .ours_quatre {
+        background-image: url(../photos/ours_4.jpg);
+        background-size: 85%;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .ours_cinq {
+        background-image: url(../photos/ours_5.jpg);
+        background-size: 70%;
+    }
+    
+    .ours_six {
+        background-image: url(../photos/ours_6.jpg);
+        background-size: 98%;
+        border-bottom-right-radius: 0px;
+    }
+    
+    .border_left {
+        border-bottom-left-radius: 0px;
+        }
+        
+    .border_right {
+        border-bottom-right-radius: 0px;
+        }
+    
+}

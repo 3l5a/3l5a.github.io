@@ -1,0 +1,267 @@
+h1 {
+    background-color: var(--background-dark);
+    font-family: var(--font-titles);
+    color: var(--background-extra-light);
+    text-align: center;
+    font-size: 4.5rem;
+    padding: 20px;
+    text-shadow: var(--text-shadow-noir);}
+
+    main {
+        filter: drop-shadow(0px 5px 5px rgb(150, 148, 148));
+    }
+
+h6 {
+    display: none;
+}
+
+/* -------------------------------
+-------- NOTRE ASSOCIATION--------
+-------------------------------- */
+
+
+
+section.association {
+    font-family: 'Gayathri', 'Helvetica';
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.5rem;
+    background-color: var(--background-light);
+    padding: 80px 35px 70px 35px;
+    text-align: justify;
+    display: grid;
+    grid-template-rows: 1fr 1.3fr;
+    grid-template-columns: 1fr .8fr;
+    gap: 0 60px;
+    justify-items: center;
+    align-items: center;
+    padding: 80px 80px 20px 80px;
+}
+
+img.membres, img.cours_couture {
+    border-radius: 40px;
+    border: 4px solid black;
+    width: 100%;
+}
+
+.elements {
+    margin-bottom: 20px;
+}
+
+
+.colonne_texte1 {
+    padding-left: 25px;
+
+}
+
+.colonne_texte2 {
+    padding-left: 25px;
+}
+
+/* -------------------------------
+-------- NOS FONDATEURS-----------
+-------------------------------- */
+
+section.fondateurs {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--background-extra-light);
+    padding: 50px;
+    font-family: 'Gayathri', Helvetica;
+}
+
+.card_fondatrices {
+    background-color: var(--background-light);
+    border-radius: 10rem 10rem 5rem 5rem;
+    width: 40%;
+    height: 570px;
+}
+
+.bandeau {
+    background-color: #B886CA;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.photos_fondatrices {
+    width: 70%;
+    margin-right: 25px;
+}
+
+.bandeau h2 {
+    font-family: var(--font-titles);
+    font-size: 4rem;
+    padding-bottom: 10px;
+}
+
+.bandeau p {
+    font-size: 1.4rem;
+}
+
+.description_fondatrice {
+    padding: 30px;
+    font-size: .9rem;
+    line-height: 1.2rem;
+}
+
+.description_fondatrice p {
+    padding-bottom: 10px;
+    text-align: justify;
+    letter-spacing: .1rem;
+}
+
+/* -------------------------------
+-------- NOS MEMBRES -------------
+-------------------------------- */
+
+
+.nos_membres {
+    background-color: var(--background-extra-light);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    padding-left: 10%;
+}
+
+.card_membre {
+    display: flex;
+    align-items: center;
+    margin: 40px;
+}
+
+.card_membre img {
+    width: 30%;
+    margin-right: 30px;
+}
+
+.card_membre h2 {
+    font-family: 'Home and Work', Helvetica;
+    font-size: 4rem;
+}
+
+.card_membre p {
+    font-family: 'Gayathri', Helvetica;
+    font-size: 1.5rem;
+}
+
+
+/* --- MEDIA QUERIES */
+
+@media screen and (max-width:691px) {
+
+/* NOTRE ASSOCIATION */
+
+    h1.association {
+        background-color: var(--background-light);
+        font-family: 'Home and Work';
+        color: black;
+        text-align: center;
+        font-size: 6rem;
+        text-shadow: var(--text-shadow-h1);
+        padding: 160px 0 0 0;
+    }
+
+    section.association {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .colonne_texte1 {
+        padding-top: 20px;
+        padding-right: 25px;
+    }
+
+    .colonne_texte2 {
+        padding-top: 20px;
+        padding-right: 25px;
+    }
+
+    .cours_couture {
+        margin-bottom: 20px;
+    }
+
+/* NOS FONDATEURS */
+
+    .fondateurs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 6rem;
+        padding: 0;
+    }
+
+    section.fondateurs {
+        padding: 75px 10px 150px 10px;
+    }
+    
+    .card_fondatrices {
+        background-color: var(--background-extra-light);
+        width: 80%;
+        height: 500px;
+        margin-top: 250px;
+    } 
+
+    .margin_queries {
+        margin-top: 430px;
+    }
+
+    .bandeau {
+        position: relative;
+        display: flex;
+        text-align: center;
+    }
+
+    .photos_fondatrices {
+        position: absolute;
+        width: 60%;
+        right: 15%;
+        bottom: 140px;
+    }
+
+    .intro_fondatrices > h2 {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .intro_fondatrices > p {
+        padding: 0 0 10px 0;
+        margin: 0px;
+    }
+
+    .description_fondatrice {
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 25px 0 0 0;
+        line-height: 2rem;
+    }
+
+/* NOS MEMBRES */
+
+.titre_membre {
+    font-size: 6rem;
+    padding: 0;
+}
+
+.nos_membres {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+}
+
+.card_membre {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px
+}
+
+.card_membre img {
+    width: 60%;
+    margin: 0;
+}
+
+}
+

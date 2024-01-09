@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BACKGROUND */
+
+main {
+    background-color: var(--background-light);
+    filter: drop-shadow(0px 5px 5px rgb(150, 148, 148));
+}
+
+/* TITRE */
+
+.titre_tuto {
+    font-family: 'Home and Work';
+    color: black;
+    text-align: center;
+    font-size: 6rem;
+    padding: 35px;
+    text-shadow: var(--text-shadow-h1);
+}
+
+/* VIDEO */
+
+.video_tuto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TEXTE */
+
+.text_tutovideo {
+    font-family: "Gayathri";
+    text-align: center;
+    padding: 50px;
+    font-size: 1.4rem;
+    padding-bottom: 100px;
+}
+
+.liste_tuto {
+    list-style: disc;
+    list-style-position: inside;
+}
+
+p > a {
+    color: var(--background-dark);
+}
+
+@media screen and (max-width:691px) {
+
+
+    .titre_tuto {
+        font-size: 4.5rem;
+        padding-top: 160px;
+    }
+}

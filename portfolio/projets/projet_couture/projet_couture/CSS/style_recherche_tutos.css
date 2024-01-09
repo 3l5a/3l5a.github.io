@@ -1,0 +1,120 @@
+main {
+    filter: drop-shadow(0px 5px 5px rgb(107, 106, 106));
+}
+
+h1 {
+    background-color: var(--background-dark);
+    font-family: var(--font-titles);
+    color: var(--background-extra-light);
+    text-align: center;
+    font-size: 4.5rem;
+    padding: 20px;
+    text-shadow: var(--text-shadow-noir);
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 100px;
+    padding: 50px;
+    place-items: center;
+    background-color: var(--background-light);
+}
+
+.card  a {
+    text-decoration: none;
+    color: black;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------------------CARDS-------------- */
+
+.card {
+    filter: var(--drop-shadow-article);
+}
+
+.photo_trousse {
+    background-image: url(../photos/petite_trousse.png);
+    width: 499px;
+    height: 334px;
+    border-radius: 30px 30px 0 0;
+}
+
+.photo_pochon {
+    background-image: url(../photos/petit_pochon.png);
+    width: 499px;
+    height: 334px;
+    border-radius: 30px 30px 0 0;
+
+}
+
+.photo_grenouillere {
+    background-image: url(../photos/grenouillere.png);
+    width: 499px;
+    height: 334px;
+    border-radius: 30px 30px 0 0;
+
+}
+
+.photo_top_enfant {
+    background-image: url(../photos/top_enfant.png);
+    width: 499px;
+    height: 324px;
+    border-radius: 30px 30px 0 0;
+}
+
+.description_tuto {
+    background-color: var(--background-extra-light);
+    width: 499px;
+    border-radius: 0 0 20px 20px;
+}
+
+.description_tuto h2 {
+    font-family: 'Home and Work';
+    font-size: 5rem;
+}
+
+.description_tuto p {
+    font-family: 'Gayathri', Helvetica;
+    font-size: 1.2rem;
+    padding-bottom: 30px;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media screen and (max-width:691px) {
+
+    section {
+        gap: 30px;
+    }
+
+    h1 {
+        background-color: var(--background-light);
+        font-family: 'Home and Work';
+        color: black;
+        text-align: center;
+        font-size: 6rem;
+        padding: 160px 35px 35px 35px;
+        text-shadow: var(--text-shadow-h1);
+    }
+
+    .tutos_couture {
+        display: flex;
+        flex-direction: column;
+        padding : 0 0 50px 0;
+    }
+
+    .description_tuto p {
+        font-size: 1.4rem;
+    }
+
+    .photo_top_enfant {
+        height: 320px;
+    }
+    
+}

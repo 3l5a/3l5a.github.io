@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/tutos.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gayathri&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="photos/favico.ico">
+  <title>Tutos</title>
+</head>
+
+<body>
+
+
+  <!-- HEADER -->
+
+  <header>
+
+    <nav>
+
+      <div class="navbar">
+
+        <!-- LOGO GAUCHE -->
+        <ul class="logo_gauche">
+          <li><a href="index.html"><img class="logonav" src="photos/logo.png" alt="Logo des petites souris"></a>
+          </li>
+          <li>
+            <h2 class="titre_logo">Atelier de couture</h2>
+          </li>
+        </ul>
+
+
+        <!-- NAVBAR -->
+        <div class="burger_icon">
+          <input type="checkbox" id="toggle" name="hidden">
+          <label for="toggle"><img src="photos/icon_burger.png" alt=""></label>
+
+          <ul class="burger">
+            <li>
+              <h2><a href="index.html" class="nav_links" title="Accueil">Accueil</a></h2>
+            </li>
+            <li>
+              <h2><a href="calendrier.html" class="nav_links" title="Calendrier">Calendrier</a></h2>
+            </li>
+            <li>
+              <h2><a href="realisations.html" class="nav_links" title="Réalisations">Realisations</a></h2>
+            </li>
+            <li>
+              <h2><a href="tutos.html" class="nav_links" title="Tutos">Tutos</a></h2>
+            </li>
+            <li>
+              <h2><a href="lasso.html" class="nav_links" title="L'asso">L'asso</a></h2>
+            </li>
+            <li>
+              <a href="" title="Rechercher"><img src="photos/loupe.svg" alt=""></a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+    <!-- BANNIERE -->
+
+    <div class="banniere">
+
+      <img src="photos/logo.png" alt="" class="logobanniere">
+
+    </div>
+
+  </header>
+
+
+  <!-- MAIN -->
+
+  <main>
+
+    <div class="bandeau_titre">
+      <h1>Tous nos tutos</h1>
+    </div>
+    <h1 class="titre_tutos">Par categorie</h1>
+
+    <section class="petitcontainer">
+      <h2>Hidden</h2>
+        <div class="container_tutos">
+          <div class="card_carre photo_crochet">
+            <a class='tutos_tricot' href="recherche_tutos.html">
+              <div class="bandeau">Tutos Crochet</div>
+            </a>
+          </div>
+          <div class="card_carre photo_couture">
+            <a class='tutos_tricot' href="recherche_tutos.html">
+              <div class="bandeau">Tutos couture</div>
+            </a>
+          </div>
+          <div class="card_carre photo_tricot">
+            <a class='tutos_tricot' href="recherche_tutos.html">
+              <div class="bandeau">Tutos tricot</div>
+            </a>
+          </div>
+        </div>
+    </section>
+
+    <section class="grandcontainer">
+      <h2>Hidden</h2>
+      <div class="card_tuto photo_tuto_video">
+        <a class='lien_tous_nos_tutos' href="tutos_video.html">
+          <div class="bandeau">Tutos video</div>
+        </a>
+      </div>
+      <div class="card_tuto photo_patron">
+        <a class='lien_tous_nos_tutos' href="tutos_papier.html">
+          <div class="bandeau">Patrons</div>
+        </a>
+      </div>
+      <div class="card_tuto photo_tous_tutos">
+        <a class='lien_tous_nos_tutos' href="#">
+          <div class="bandeau">Tous nos tutos</div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div id="newsletter">
+      <p>Abonnez-vous à notre newsletter !</p>
+      <form>
+        <input type="email" placeholder="Votre email">
+        <input type="submit" value="S'abonner">
+      </form>
+    </div>
+
+    <div id="socials">
+      <a href="https://www.pinterest.it/search/pins/?q=les%20petites%20souris&rs=typed"><img src="photos/pinterest.svg"
+          alt="Lien vers notre pinterest"></a>
+      <a href="https://www.facebook.com/bellesgc"><img src="photos/Facebook.svg" alt="Lien vers notre Facebook"
+          id="facebook"></a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="photos/instagram.svg"
+          alt="Lien vers notre Instagram"></a>
+    </div>
+
+    <div id="nav_footer">
+      <div id="arborescence">
+        <div id="calendrier">
+
+          <ul>
+            <li><span>Calendrier</span></li>
+            <li><a href="calendrier.html">Planning <br>et évènements</a></li>
+          </ul>
+
+        </div>
+        <div id="realisations">
+
+          <ul>
+            <li><span>Realisations</span></li>
+            <li><a href="recherche_real.html">Catégories de réalisations</a></li>
+            <li><a href="recherche_real.html">Dernières réalisations</a></li>
+          </ul>
+
+        </div>
+        <div id="tutos">
+          
+          <ul>
+            <li><span>Tutos</span>
+            <li><a href="recherche_tutos.html">Tutos vidéo</a></li>
+            <li><a href="recherche_tutos.html">Tutos photos</a></li>
+            <li><a href="recherche_tutos.html">Patrons</a></li>
+          </ul>
+
+        </div>
+        <div id="asso">
+
+          <ul>
+            <li><span>L'asso</span></li>
+            <li><a href="lasso.html">Histoire et fondateurs</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="coordonnees">
+        <p>Les Petites Souris <br> 142, route de Mauguio <br>34 130 MAUGUIO</p>
+        <p>lespetitessouris@gmail.com</p>
+        <p>Téléphone du lundi au vendredi <br>de 9h à 12h et de 14h à 16h30 <br>03 83 69 78 03</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

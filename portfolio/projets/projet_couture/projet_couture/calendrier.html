@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/style_calendrier.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gayathri&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="photos/favico.ico">
+  <title>Calendrier</title>
+</head>
+
+<body>
+
+
+  <!-- HEADER -->
+
+  <header>
+
+    <nav>
+
+      <div class="navbar">
+
+        <!-- LOGO GAUCHE -->
+        <ul class="logo_gauche">
+          <li><a href="index.html"><img class="logonav" src="photos/logo.png" alt="Logo des petites souris"></a>
+          </li>
+          <li>
+            <h2 class="titre_logo">Atelier de couture</h2>
+          </li>
+        </ul>
+
+
+        <!-- NAVBAR -->
+        <div class="burger_icon">
+          <input type="checkbox" id="toggle" name="hidden">
+          <label for="toggle"><img src="photos/icon_burger.png" alt=""></label>
+
+          <ul class="burger">
+            <li>
+              <h2><a href="index.html" class="nav_links" title="Accueil">Accueil</a></h2>
+            </li>
+            <li>
+              <h2><a href="calendrier.html" class="nav_links" title="Calendrier">Calendrier</a></h2>
+            </li>
+            <li>
+              <h2><a href="realisations.html" class="nav_links" title="Réalisations">Realisations</a></h2>
+            </li>
+            <li>
+              <h2><a href="tutos.html" class="nav_links" title="Tutos">Tutos</a></h2>
+            </li>
+            <li>
+              <h2><a href="lasso.html" class="nav_links" title="L'asso">L'asso</a></h2>
+            </li>
+            <li>
+              <a href="" title="Rechercher"><img src="photos/loupe.svg" alt=""></a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+    <!-- BANNIERE -->
+
+    <div class="banniere">
+
+      <img src="photos/logo.png" alt="Logo Banniere" class="logobanniere">
+
+    </div>
+
+  </header>
+
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- NOS ATELIERS SAISONNIERS -->
+
+    <section class="ateliers">
+      <h1 class="titre_ateliers">Nos ateliers saisonniers</h1>
+      <div class="container_ateliers">
+        <div class="container_une">
+          <div class="card_une">
+            <div class="image_une"></div>
+            <div class="texte_card">
+              <h3>Evenement Halloween</h3>
+              <p>Prêts à trembler de peur et se régaler de bonbons ? Rejoignez-nous pour confectionner des réalisations
+                sur le thème d'Halloween ! <a href="halloween.html" title="Lien Réalisations Halloween">Lire la suite
+                  ></a></p>
+            </div>
+          </div>
+          <div class="card_une">
+            <div class="image_deux"></div>
+            <div class="texte_card">
+              <h3>Realisation Noel</h3>
+              <p>Vendredi dernier a eu lieu notre atelier. Pour l'occasion, tous les membres ont confectionné des
+                chaussettes de Noël
+                et d'autres goodies. <a href="noel.html" title="Noel">Lire la suite ></a>
+              </p>
+            </div>
+          </div>
+          <div class="card_une">
+            <div class="image_trois"></div>
+            <div class="texte_card">
+              <h3>Notre Association</h3>
+              <p>Rencontrez les membres de notre club, et découvrez l'histoire de l'association ! <a href="lasso.html"
+                  title="Notre Association">Lire la suite ></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANNING -->
+
+
+    <section class="planning">
+      <h1 class="titre_planning">Notre planning</h1>
+      <h1 class="titre_mobile">Nos horaires</h1>
+      <div class="container_planning">
+        <table class="planning-table">
+          <thead>
+            <tr>
+              <td class="table-time"></td>
+              <td>Lundi</td>
+              <td>Mardi</td>
+              <td colspan="2">Mercredi</td>
+              <td>Jeudi</td>
+              <td colspan="2">Vendredi</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-time" rowspan="2">14h00</td>
+              <td class="planning-table-couture" rowspan="7">Couture</td>
+              <td></td>
+              <td class="planning-table-tricot" rowspan="9">Tricot <br>et Crochet</td>
+              <td></td>
+              <td class="no_border"></td>
+              <td class="planning-table-tricot" rowspan="9">Tricot <br>et Crochet</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="planning-table-enfant" rowspan="4">Atelier Enfant</td>
+              <td class="planning-table-couture" rowspan="8">Couture</td>
+              <td class="no_border"></td>
+              <td class="planning-table-bebe" rowspan="4">Atelier Bébé</td>
+            </tr>
+            <tr>
+              <td class="table-time" rowspan="2">15h00</td>
+              <td class="no_border"></td>
+            </tr>
+            <tr>
+              <td class="no_border"></td>
+            </tr>
+            <tr>
+              <td class="table-time" rowspan="2">16h00</td>
+              <td class="no_border"></td>
+            </tr>
+            <tr>
+              <td class="planning-table-couture" rowspan="4">Couture</td>
+              <td class="no_border"></td>
+              <td class="planning-table-couture" rowspan="4">Couture</td>
+            </tr>
+            <tr>
+              <td class="table-time" rowspan="2">17h00</td>
+              <td class="no_border"></td>
+            </tr>
+            <tr>
+              <td class="no_border"></td>
+              <td class="no_border"></td>
+            </tr>
+            <tr>
+              <td class="table-time">18h00</td>
+              <td class="no_border border_purple"></td>
+              <td class="no_border"></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td class="table-time"></td>
+              <td>Salle 1</td>
+              <td>Salle 2</td>
+              <td>Salle 1</td>
+              <td>Salle 2</td>
+              <td></td>
+              <td>Salle 1</td>
+              <td>Salle 2</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <table class="planning_mobile">
+        <tr>
+          <td class="no_border">Lundi :</td>
+          <td class="no_border">14-16h Couture Salle 1</td>
+        </tr>
+        <tr>
+          <td class="no_border">Mardi :</td>
+          <td class="no_border">14h30-16h30 Atelier enfant Salle 1 <br>
+            16h30-18h Couture Salle 2</td>
+        </tr>
+        <tr>
+          <td class="no_border">Mercredi :</td>
+          <td class="no_border">14h30-18h Tricot et crochet Salle 1 <br>
+            14h30-18h Couture Salle 2</td>
+        </tr>
+        <tr>
+          <td class="no_border">Vendredi :</td>
+          <td class="no_border">14h-18h Tricot et crochet Salle 1 <br>
+            14h30-16h30 Atelier bébé Salle 2 <br>
+            16h30-18h Couture Salle 2
+          </td>
+        </tr>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div id="newsletter">
+      <p>Abonnez-vous à notre newsletter !</p>
+      <form>
+        <input type="email" placeholder="Votre email">
+        <input type="submit" value="S'abonner">
+      </form>
+    </div>
+
+    <div id="socials">
+      <a href="https://www.pinterest.it/search/pins/?q=les%20petites%20souris&rs=typed"><img src="photos/pinterest.svg"
+          alt="Lien vers notre pinterest"></a>
+      <a href="https://www.facebook.com/bellesgc"><img src="photos/Facebook.svg" alt="Lien vers notre Facebook"
+          id="facebook"></a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="photos/instagram.svg"
+          alt="Lien vers notre Instagram"></a>
+    </div>
+
+    <div id="nav_footer">
+      <div id="arborescence">
+        <div id="calendrier">
+
+          <ul>
+            <li><span>Calendrier</span></li>
+            <li><a href="calendrier.html">Planning <br>et évènements</a></li>
+          </ul>
+
+        </div>
+        <div id="realisations">
+
+          <ul>
+            <li><span>Realisations</span></li>
+            <li><a href="recherche_real.html">Catégories de réalisations</a></li>
+            <li><a href="recherche_real.html">Dernières réalisations</a></li>
+          </ul>
+
+        </div>
+        <div id="tutos">
+
+          <ul>
+            <li><span>Tutos</span>
+            <li><a href="recherche_tutos.html">Tutos vidéo</a></li>
+            <li><a href="recherche_tutos.html">Tutos photos</a></li>
+            <li><a href="recherche_tutos.html">Patrons</a></li>
+          </ul>
+
+        </div>
+        <div id="asso">
+
+          <ul>
+            <li><span>L'asso</span></li>
+            <li><a href="lasso.html">Histoire et fondateurs</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="coordonnees">
+        <p>Les Petites Souris <br> 142, route de Mauguio <br>34 130 MAUGUIO</p>
+        <p>lespetitessouris@gmail.com</p>
+        <p>Téléphone du lundi au vendredi <br>de 9h à 12h et de 14h à 16h30 <br>03 83 69 78 03</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-image: url(../photos/background-noel.jpg);
+    background-size: contain;
+    padding-bottom: 50px;
+    filter: drop-shadow(0px 5px 5px rgb(107, 106, 106));
+}
+
+main h2 {
+    display: none;
+}
+
+.banniere_noel {
+    background-image: url(../photos/banniere-noel.png);
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+.titre_section {
+    font-family: 'Home and Work', Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 6rem;
+    padding: 20px;
+    text-shadow: var(--text-shadow-h1);
+}
+
+.titre_noel {
+    font-family: 'Home and Work', Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 6rem;
+    padding: 20px;
+    text-shadow: var(--text-shadow-h1);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 10% 50px 10%;
+}
+
+.photos {
+    background-size: cover;
+}
+
+.card_confectionner {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    border-radius: 35px;
+    filter: var(--drop-shadow-global);
+}
+
+.card_1 {
+    background-image: url(../photos/card-noel-1.png);
+    background-size: cover;
+}
+
+.card_2 {
+    background-image: url(../photos/card-noel-2.png);
+    background-size: cover;
+}
+
+.card_3 {
+    background-image: url(../photos/card-noel-3.png);
+    background-size: cover;
+}
+
+.card_4 {
+    background-image: url(../photos/card-noel-4.png);
+    background-size: cover;
+}
+
+.card_5 {
+    background-image: url(../photos/card-noel-5.png);
+    background-size: cover;
+}
+
+.card_6 {
+    background-image: url(../photos/card-noel-6.png);
+    background-size: cover;
+}
+
+/* ----- MEDIA QUERIES ------ */
+
+@media screen and (max-width:691px) {
+
+    .banniere_noel {
+        background-image: url(../photos/banniere-noel.png);
+        background-size: cover;
+        background-color: black;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 200px;
+        z-index: 2;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .titre_noel {
+        padding-top: 160px;
+    }
+
+    .card_confectionner {
+        margin: 30px;
+    }
+}
